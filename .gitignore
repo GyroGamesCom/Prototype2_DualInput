@@ -13,6 +13,12 @@ src/*.exp
 src/*.lib
 src/*.pdb
 src/xinput1_3.dll
+src/hires/*.obj
+src/hires/*.exp
+src/hires/*.lib
+src/hires/*.pdb
+src/hires/winmm.dll
+src/hires/winmm_dump.txt
 
 # Release packages
 dist/

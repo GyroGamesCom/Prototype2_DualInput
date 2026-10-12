@@ -80,3 +80,14 @@ Unpatched stick pre-compensation: inject r = sgn(q)(0.3+0.7·sqrt|q|), keep |r|<
 - GameDB::SetInt 0x10670050 thiscall(this=[0x10E185C0], const u32 key[2], int player, int value, int sub) ret 0x10; prologue 8B 44 24 04 56 | 57 8B F9 ...
 - SDC hash 0x0BEC25471FB4F49A (key[0]=0x1FB4F49A, key[1]=0x0BEC2547); hash fn 0x1063BE80: h=h*0x1003F ^ (int64)(signed char)c.
 - Fix (implemented in proxy): strip all DI mouse data while flag==0. Native alternative: detour fe_LockController (prologue 56 6A 01 8B F1) + SetInt veto of SDC<2 while pad connected.
+
+## Resolution cap (max 1920x1200) – 2026-10-12
+- Hard-coded table of 14 (u32 w,u32 h) pairs at **0x10cbb2c0** (.data, RW, 112 bytes, file 0xcba2c0): 640x480 … 1920x1080, 1920x1200. Following bytes are other data (table can't grow in place).
+- Lua: rm_GetNumAvailableResolutions 0x10405100 (`mov eax,0Eh`), rm_GetAvailableResolutionWidth/Height 0x104050e0/0x104050f0, rm_IsResolutionSupported 0x10405110 (adapter mode AND whitelist), rm_IsResolutionRecommended 0x10405130 (aspect == largest adapter mode), rm_SetResolution 0x104074e0.
+- Table copied as whitelist by FUN_100f6a10 (config+0x104, cap 26) and FUN_1065ec50 (device params, cap 32) → render obj [0x10e436c4]+0x30/+0x34. Adapter enum FUN_10939c90 keeps modes only if whitelisted.
+- Setting `SettingVideoResolution` is an INDEX 0..13 (apply FUN_10407690 clamps). Cmdline `width`/`height` only pick the default index. No way to force other sizes without patching.
+- Fix: rewrite the 14 entries before FUN_100f6a10/FUN_100f3e80 run (from a DLL statically imported by the engine). Entry 13 → 3840x2160 = 8-byte patch at 0x10cbb328 (`80 07 00 00 b0 04 00 00` → `00 0f 00 00 70 08 00 00`).
+- Mode appears only if the adapter reports it (4K monitor or DSR/DLDSR/VSR).
+- Cmdline switches: windowed, width, height, vsync, aa (0..2), shadow (0..2), NoMSAA, MSAA2x, MSAA4x, InGameDisableMouse, DebugCam2Controller, EnableAllControllers.
+- Proxy hosts (non-KnownDLL engine imports): d3d9 (avoid, ReShade), WINMM (timeGetTime), dbghelp, IPHLPAPI, XINPUT1_3 (gyro mod).
+- Refresh: engine picks the FIRST adapter mode matching w/h (TV lists 24 Hz first at 4K -> vsync 24 fps). HiRes hooks IDirect3D9::CreateDevice / IDirect3DDevice9::Reset (vtable 16) and sets FullScreen_RefreshRateInHz to the highest available (verified live: 60 fps).

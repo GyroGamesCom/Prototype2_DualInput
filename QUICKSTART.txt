@@ -38,5 +38,17 @@ SENSITIVITY
   Changes to the ini are applied while the game runs (except LinearMouse,
   StickLinear and the other engine patch keys: restart the game).
 
+HIRES (optional, separate mod: resolutions above 1920x1200)
+  Run install_hires.bat (remove: uninstall_hires.bat). Manual: copy winmm.dll and
+  p2_hires.ini from "mod_hires" next to prototype2.exe.
+  Then select your resolution in Options again (once; the saved setting is a position
+  in the resolution list, which the mod changes).
+  4K appears only if your display/driver offers it. On a 1080p/1200p monitor enable
+  NVIDIA DLDSR (Control Panel > Manage 3D settings > DSR Factors > DL scaling 2.25x)
+  or AMD VSR. DLSS is not possible (DirectX 9, no motion vectors); DLDSR is the
+  recommended alternative. The resolution list is in p2_hires.ini.
+  Fullscreen always uses the highest refresh rate the display offers (fixes 24 fps
+  at 4K on TVs). [Display] RefreshRate / MaxRefresh in p2_hires.ini change that.
+
 Unofficial mod, not affiliated with Radical Entertainment, Activision
 or Valve. Use at your own risk.
