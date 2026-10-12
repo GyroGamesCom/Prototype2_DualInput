@@ -1,0 +1,42 @@
+DUAL INPUT MOD for Prototype 2
+==============================
+
+Gyro and gamepad work at the same time: gyro drives the game's own mouse
+look, the game stays in gamepad mode (gamepad button prompts are shown).
+Full details are in README.md.
+
+INSTALLATION
+  1. Unzip anywhere.
+  2. Run install.bat. It finds the game through Steam (or asks for the folder).
+     When updating, it keeps your settings.
+  Manual: copy the 2 files from the "mod" folder (xinput1_3.dll,
+  xinput_mouse.ini) next to prototype2.exe
+  (Steam: right-click the game > Manage > Browse local files).
+
+UNINSTALL
+  Run uninstall.bat (or delete xinput1_3.dll, xinput_mouse.ini and
+  xinput_mouse.log from the game folder).
+
+STEAM INPUT
+  Gyro                    -> "As Mouse"
+  Right trackpad / stick  -> "Joystick" (right stick)
+  Everything else         -> normal gamepad
+  The right trackpad/stick always has priority over gyro.
+
+AT THE PRESS-START SCREEN
+  Press a button on the gamepad (not the keyboard or mouse). The mod blocks
+  mouse input on that screen, so gyro cannot make the game lock the keyboard.
+  If the game ever ends up in keyboard mode, reconnect the controller (the
+  game switches to the pad when it connects).
+
+SENSITIVITY
+  Gyro speed = Steam Input gyro sensitivity x in-game Mouse Sensitivity
+  (x "NativeSensitivity" in xinput_mouse.ini).
+  Tip: keep the Steam gyro sensitivity moderate/high and lower the in-game
+  Mouse Sensitivity for finer resolution.
+  Smoothing: NativeSmoothingMs (default 35, 0 = off).
+  Changes to the ini are applied while the game runs (except LinearMouse,
+  StickLinear and the other engine patch keys: restart the game).
+
+Unofficial mod, not affiliated with Radical Entertainment, Activision
+or Valve. Use at your own risk.

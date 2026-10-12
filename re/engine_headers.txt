@@ -1,0 +1,151 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36260.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file D:\SteamLibrary\steamapps\common\Prototype 2\prototype2engine.dll
+
+PE signature found
+
+File Type: DLL
+
+FILE HEADER VALUES
+             14C machine (x86)
+               5 number of sections
+        68B09A3A time date stamp Thu Aug 28 20:04:42 2025
+               0 file pointer to symbol table
+               0 number of symbols
+              E0 size of optional header
+            2102 characteristics
+                   Executable
+                   32 bit word machine
+                   DLL
+
+OPTIONAL HEADER VALUES
+             10B magic # (PE32)
+            9.00 linker version
+          9E4000 size of code
+          4E8200 size of initialized data
+               0 size of uninitialized data
+          98FB43 entry point (1098FB43)
+            1000 base of code
+          9E5000 base of data
+        10000000 image base (10000000 to 10F63FFF)
+            1000 section alignment
+             200 file alignment
+            5.00 operating system version
+            0.00 image version
+            5.00 subsystem version
+               0 Win32 version
+          F64000 size of image
+             400 size of headers
+          ED1930 checksum
+               2 subsystem (Windows GUI)
+               0 DLL characteristics
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+          C1D930 [      E3] RVA [size] of Export Directory
+          C1BFF0 [     140] RVA [size] of Import Directory
+          E5A000 [     3AC] RVA [size] of Resource Directory
+               0 [       0] RVA [size] of Exception Directory
+               0 [       0] RVA [size] of Certificates Directory
+          E5B000 [   E2F9C] RVA [size] of Base Relocation Directory
+          9E8D30 [      1C] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+               0 [       0] RVA [size] of Thread Storage Directory
+          B22E70 [      40] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+          9E5000 [     540] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+  9E3E1A virtual size
+    1000 virtual address (10001000 to 109E4E19)
+  9E4000 size of raw data
+     400 file pointer to raw data (00000400 to 009E43FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #2
+  .rdata name
+  238A13 virtual size
+  9E5000 virtual address (109E5000 to 10C1DA12)
+  238C00 size of raw data
+  9E4400 file pointer to raw data (009E4400 to 00C1CFFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    68B09A3A cv            61 00B22EB8   B222B8    Format: RSDS, {845794A5-F4C2-473C-9566-C2120A619F30}, 2, c:\workspace\outrun\proto2\prototype\playable\win32\prototype2engine.pdb
+
+SECTION HEADER #3
+   .data name
+  23BC30 virtual size
+  C1E000 virtual address (10C1E000 to 10E59C2F)
+  1A6A00 size of raw data
+  C1D000 file pointer to raw data (00C1D000 to 00DC39FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #4
+   .rsrc name
+     3AC virtual size
+  E5A000 virtual address (10E5A000 to 10E5A3AB)
+     400 size of raw data
+  DC3A00 file pointer to raw data (00DC3A00 to 00DC3DFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #5
+  .reloc name
+  1087B6 virtual size
+  E5B000 virtual address (10E5B000 to 10F637B5)
+  108800 size of raw data
+  DC3E00 file pointer to raw data (00DC3E00 to 00ECC5FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+  Summary
+
+      23C000 .data
+      239000 .rdata
+      109000 .reloc
+        1000 .rsrc
+      9E4000 .text

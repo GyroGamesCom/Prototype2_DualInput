@@ -1,0 +1,443 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36260.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file D:\SteamLibrary\steamapps\common\Prototype 2\prototype2engine.dll
+
+File Type: DLL
+
+  Section contains the following imports:
+
+    USER32.dll
+              109E53E0 Import Address Table
+              10C1C510 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   A0 DestroyWindow
+                  307 wsprintfA
+                   2A CharLowerBuffA
+                  132 GetKeyboardLayout
+                  181 GetWindowLongA
+                  1F0 MapVirtualKeyExA
+                  16F GetSystemMetrics
+                  1FF MessageBoxW
+                  2A4 SetWindowLongA
+                   1C CallWindowProcA
+                  2B8 ShowWindow
+                  10D GetClientRect
+                  21B PeekMessageA
+                   A8 DispatchMessageA
+                  1F8 MessageBoxA
+                  2B3 ShowCursor
+                  2D5 TranslateMessage
+
+    SHELL32.dll
+              109E53D8 Import Address Table
+              10C1C508 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   BC SHGetFolderPathA
+
+    steam_api.dll
+              109E5510 Import Address Table
+              10C1C640 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    A SteamAPI_RestartAppIfNecessary
+                    5 SteamAPI_Init
+                    B SteamAPI_RunCallbacks
+                   31 SteamUser
+                   1B SteamFriends
+                   13 SteamAPI_WriteMiniDump
+                   14 SteamApps
+                    9 SteamAPI_RegisterCallback
+                   32 SteamUserStats
+                   11 SteamAPI_UnregisterCallback
+                    F SteamAPI_Shutdown
+
+    d3d9.dll
+              109E54E0 Import Address Table
+              10C1C610 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    9 Direct3DCreate9
+
+    MSVCR90.dll
+              109E51AC Import Address Table
+              10C1C2DC Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  505 isupper
+                  503 ispunct
+                  501 islower
+                  598 wcsrtombs_s
+                  3E6 _unlock
+                   96 __dllonexit
+                  16A _encode_pointer
+                  276 _lock
+                  31C _onexit
+                  160 _decode_pointer
+                  287 _malloc_crt
+                  16B _encoded_null
+                  204 _initterm
+                  205 _initterm_e
+                  115 _amsg_exit
+                  10B _adjust_fdiv
+                   6A __CppXcptFilter
+                   43 ?terminate@@YAXXZ
+                  173 _except_handler4_common
+                   36 ?_type_info_dtor_internal_method@type_info@@QAEXXZ
+                   8C __clean_type_info_names_internal
+                   60 _HUGE
+                   56 _CItanh
+                   53 _CIsinh
+                   4C _CIcosh
+                  515 ldexp
+                  4E7 frexp
+                  4D5 fgets
+                   5A _CxxThrowException
+                   47 _CIacos
+                  32B _purecall
+                  4B5 abort
+                  54D strcat_s
+                  4FD iscntrl
+                  550 strcoll
+                  558 strncat
+                  51A longjmp
+                  4CC exit
+                  363 _setjmp3
+                  525 memcmp
+                  572 tolower
+                  52E printf
+                  4C5 ceil
+                  4D8 floor
+                  535 qsort
+                   48 _CIasin
+                  526 memcpy
+                  251 _isnan
+                  52A memset
+                  578 vfprintf
+                  402 _vscprintf
+                  524 memchr
+                  54F strcmp
+                  17C _exit
+                  573 toupper
+                  54E strchr
+                   51 _CIpow
+                  55A strncmp
+                  52B modf
+                  529 memmove_s
+                  538 rand
+                   4E _CIfmod
+                  561 strstr
+                  4BF atoi
+                  54B sscanf_s
+                  557 strlen
+                   73 __CxxFrameHandler3
+                  3B6 _strupr
+                  39E _strlwr
+                  4FC isalpha
+                  4FB isalnum
+                  10D _aligned_free
+                  113 _aligned_realloc
+                  10E _aligned_malloc
+                  35E _set_printf_count_output
+                  35F _set_purecall_handler
+                  386 _splitpath_s
+                  286 _makepath_s
+                  51B malloc
+                  54A sscanf
+                  569 swscanf
+                  59A wcsstr
+                  4DF fputs
+                  4DE fputc
+                  40A _vsnprintf
+                  55B strncpy
+                  546 sprintf
+                  4DC fprintf
+                  4E4 free
+                   A1 __iob_func
+                  4F2 getc
+                  4DA fopen
+                  576 ungetc
+                  4D1 ferror
+                  554 strerror
+                  4D0 feof
+                  49D _wstat64
+                  4CF fclose
+                  4EA fseek
+                  4E2 fread
+                  4D2 fflush
+                  4EF fwrite
+                  4EC ftell
+                  46D _wfopen_s
+                  53D rewind
+                  170 _errno
+                  513 isxdigit
+                  266 _itoa_s
+                  1B7 _ftime64
+                  504 isspace
+                  13F _controlfp_s
+                  3B3 _strtoui64
+                  517 localeconv
+                  562 strtod
+                  593 wcsncpy_s
+                  58B wcscpy_s
+                  39A _stricmp
+                  40E _vsnprintf_s
+                  55F strrchr
+                  55E strpbrk
+                  565 strtol
+                  55C strncpy_s
+                  4FE isdigit
+                  528 memmove
+                  4BE atof
+                  553 strcspn
+                  560 strspn
+                  566 strtoul
+                  589 wcscoll
+                  433 _wcsicoll
+                  552 strcpy_s
+                  14B _crt_debugger_hook
+
+    WS2_32.dll
+              109E5430 Import Address Table
+              10C1C560 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                      Ordinal    11
+                      Ordinal    12
+                      Ordinal    10
+                      Ordinal    21
+                      Ordinal    23
+                      Ordinal     3
+                      Ordinal   111
+                      Ordinal     2
+                      Ordinal     9
+                      Ordinal    20
+                      Ordinal   115
+                      Ordinal    17
+                      Ordinal    52
+                      Ordinal     4
+                      Ordinal    19
+                      Ordinal    16
+                      Ordinal   151
+                      Ordinal    18
+                      Ordinal     6
+                      Ordinal    15
+                      Ordinal    14
+                      Ordinal     5
+
+    dbghelp.dll
+              109E54E8 Import Address Table
+              10C1C618 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   49 SymFunctionTableAccess64
+                   5A SymGetModuleBase64
+                   1F StackWalk64
+
+    IPHLPAPI.DLL
+              109E5028 Import Address Table
+              10C1C158 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   47 GetIfEntry
+                   3A GetAdaptersInfo
+                   4F GetIpAddrTable
+
+    WINMM.dll
+              109E5428 Import Address Table
+              10C1C558 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   94 timeGetTime
+
+    binkw32.dll
+              109E549C Import Address Table
+              10C1C5CC Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   46 _BinkSetVolume@12
+                   44 _BinkSetSpeakerVolumes@20
+                    F _BinkClose@4
+                   2C _BinkNextFrame@4
+                   48 _BinkShouldSkip@4
+                   18 _BinkDoFrame@4
+                   4A _BinkWait@4
+                   34 _BinkPause@8
+                   35 _BinkRegisterFrameBuffers@8
+                   1E _BinkGetFrameBuffersInfo@8
+                   4C _RADTimerRead@0
+                   3E _BinkSetMemory@8
+                   42 _BinkSetSoundSystem@8
+                   3C _BinkSetIO@4
+                   43 _BinkSetSoundTrack@8
+                   2D _BinkOpen@8
+
+    XINPUT1_3.dll
+              109E548C Import Address Table
+              10C1C5BC Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                      Ordinal     2
+                      Ordinal     4
+                      Ordinal     3
+
+    KERNEL32.dll
+              109E5038 Import Address Table
+              10C1C168 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  12E FindNextFileA
+                  11D FindFirstFileA
+                  3CD SetEndOfFile
+                  48D WriteFile
+                  3E0 SetFilePointerEx
+                  368 ReadFile
+                  141 FlushFileBuffers
+                   78 CreateFileA
+                  1D5 GetFileSizeEx
+                  1BA GetDriveTypeA
+                  1DC GetFullPathNameA
+                  1B5 GetDiskFreeSpaceExA
+                  119 FindClose
+                  266 GetTickCount
+                  1A7 GetCurrentDirectoryA
+                  36B ReadProcessMemory
+                  42D TerminateProcess
+                  415 SetUnhandledExceptionFilter
+                   B4 DebugBreak
+                  2C0 InterlockedIncrement
+                  1F6 GetModuleHandleA
+                  1F4 GetModuleFileNameA
+                  3C6 SetCurrentDirectoryA
+                  1ED GetLogicalDrives
+                  277 GetVolumeInformationA
+                  1AA GetCurrentProcessId
+                   AC CreateToolhelp32Snapshot
+                  30D Module32First
+                  1F7 GetModuleHandleExA
+                  14C FreeLibrary
+                  30F Module32Next
+                  152 GetACP
+                   76 CreateFiber
+                  433 TlsFree
+                  432 TlsAlloc
+                  405 SetThreadAffinityMask
+                  1AC GetCurrentThread
+                  428 SwitchToFiber
+                   BF DeleteFiber
+                  434 TlsGetValue
+                  38D ResumeThread
+                  40B SetThreadPriority
+                  435 TlsSetValue
+                   5E ConvertThreadToFiber
+                  105 ExitThread
+                   6C CreateDirectoryA
+                   5B ConvertFiberToThread
+                   8B CreateMutexA
+                  1E6 GetLastError
+                  1A9 GetCurrentProcess
+                  221 GetProcessAffinityMask
+                  2BC InterlockedDecrement
+                  31A MultiByteToWideChar
+                  35A RaiseException
+                  3D3 SetEvent
+                  38A ResetEvent
+                   72 CreateEventA
+                  37B ReleaseSemaphore
+                   99 CreateSemaphoreA
+                   D9 EnterCriticalSection
+                  2EF LeaveCriticalSection
+                   BE DeleteCriticalSection
+                  2B4 InitializeCriticalSection
+                  24D GetSystemTime
+                  1E7 GetLocalTime
+                   A3 CreateThread
+                  421 Sleep
+                  464 WaitForSingleObject
+                  1C6 GetExitCodeThread
+                   43 CloseHandle
+                  42E TerminateThread
+                  2D1 IsDebuggerPresent
+                  3D2 SetErrorMode
+                  26B GetTimeZoneInformation
+                  355 QueryPerformanceFrequency
+                  354 QueryPerformanceCounter
+                  33A OutputDebugStringA
+                  1AD GetCurrentThreadId
+                  311 MoveFileA
+                  329 OpenFile
+                  2BD InterlockedExchange
+                  2BA InterlockedCompareExchange
+                  43E UnhandledExceptionFilter
+                  2A1 HeapFree
+                  223 GetProcessHeap
+                  37D RemoveDirectoryA
+                   C0 DeleteFileA
+                  377 ReleaseMutex
+                  242 GetSystemDefaultLangID
+                  292 GlobalMemoryStatusEx
+                  275 GetVersionExA
+                  24F GetSystemTimeAsFileTime
+
+    ADVAPI32.dll
+              109E5000 Import Address Table
+              10C1C130 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  247 RegEnumKeyA
+                  15E GetUserNameA
+                   C7 CryptReleaseContext
+                   AC CryptAcquireContextA
+                   BD CryptGenRandom
+                  267 RegQueryValueExA
+                  25A RegOpenKeyExA
+                  22A RegCloseKey
+                  259 RegOpenKeyA
+
+    ole32.dll
+              109E54F8 Import Address Table
+              10C1C628 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   10 CoCreateInstance
+                   3D CoInitialize
+                    8 CLSIDFromString
+                   6B CoUninitialize
+                   62 CoSetProxyBlanket
+
+    OLEAUT32.dll
+              109E53C0 Import Address Table
+              10C1C4F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                      Ordinal     6
+                      Ordinal     4
+                      Ordinal     9
+                      Ordinal     8
+                      Ordinal     2
+
+  Summary
+
+      23C000 .data
+      239000 .rdata
+      109000 .reloc
+        1000 .rsrc
+      9E4000 .text
